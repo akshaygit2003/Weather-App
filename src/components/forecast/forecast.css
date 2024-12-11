@@ -1,0 +1,92 @@
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.daily-item {
+  background: linear-gradient(135deg, #e0e0e0, #f9f9f9);
+  border-radius: 15px;
+  height: 50px;
+  margin: 10px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.daily-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icon-small {
+  width: 40px;
+  height: 40px;
+}
+
+.daily-item .day {
+  color: #333;
+  flex: 1 1;
+  font-weight: 600;
+  margin-left: 15px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.description {
+  flex: 1 1;
+  margin-right: 15px;
+  text-align: right;
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.min-max {
+  color: #757575;
+  font-weight: 500;
+}
+
+.daily-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 10px 15px;
+}
+
+.daily-details-grid-item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: space-between;
+  padding: 0 5px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.daily-details-grid-item:hover {
+  background: #e0e0e0;
+  transform: scale(1.02);
+}
+
+.daily-details-grid-item label:first-child {
+  color: #222;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.daily-details-grid-item label:last-child {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
